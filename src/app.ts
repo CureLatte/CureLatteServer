@@ -9,6 +9,7 @@ export default async function  createApp(){
     app.use(morgan('combined'))
 
 
+
     app.get('/',async  (req,res,next)=> {
         return res.status(200).json({
             ok: true,
@@ -27,6 +28,7 @@ export default async function  createApp(){
             message: err.message
         })
     })
+
 
 
     return app
