@@ -14,7 +14,7 @@ jobs:
         with:
           node-version: 20.16
 
-      - uses: check nodeModules
+      - name: check nodeModules
         run: ls
 
       - name: Cache node modules
