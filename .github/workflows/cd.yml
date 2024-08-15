@@ -1,0 +1,14 @@
+on:
+  push:
+    branches:
+      - "master"
+
+jobs:
+  test:
+    name: 'test JOB'
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: check CI
+        run: echo 'connect OK'
