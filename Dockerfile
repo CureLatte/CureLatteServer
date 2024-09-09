@@ -4,6 +4,14 @@ WORKDIR /app
 
 EXPOSE 1996
 
+# apt update
+RUN ["apt-get", "update"]
+
+RUN ["apt-get", "upgrade"]
+
+RUN ["apt-get", "install", "net-tools"]
+
+
 # COPY build
 COPY ./dist ./dist
 
