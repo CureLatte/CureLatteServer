@@ -21,6 +21,10 @@ COPY ./dist ./dist
 # COPY package.json
 COPY ./package.json ./
 # node modules 설치
-RUN ["yarn", "install"]
+# RUN ["yarn", "install"]
+
+# node module copy
+COPY ./node_modules ./node_modules
+
 # CMD ["ls"]
 CMD ["node", "/app/dist/server.js"]
