@@ -58,4 +58,5 @@ jobs:
           platforms: linux/amd64
           tags: ${{secrets.DOCKERHUB_TAG}}
           push: true
+          context: .
           no-cache: true
