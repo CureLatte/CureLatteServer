@@ -12,10 +12,11 @@ RUN ["apt-get", "upgrade"]
 RUN ["apt-get", "install", "net-tools"]
 
 
+RUN ["ls"]
+
 # COPY build
 COPY ./dist ./dist
 
-RUN ["ls"]
 
 # COPY package.json
 COPY ./package.json ./
