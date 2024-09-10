@@ -15,7 +15,7 @@ RUN ["apt-get", "install", "net-tools"]
 RUN ["ls"]
 
 # COPY build
-COPY ./dist ./
+COPY ./dist ./dist
 
 
 # COPY package.json
@@ -24,7 +24,7 @@ COPY ./package.json ./
 # RUN ["yarn", "install"]
 
 # node module copy
-COPY ./node_modules ./
+COPY ./node_modules ./node_modules
 
 # CMD ["ls"]
 CMD ["node", "/app/dist/server.js"]
