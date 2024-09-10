@@ -54,6 +54,8 @@ jobs:
         with:
           path: dist
           key: buildFile
+      - name: checkFiles
+        run: ls
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v1
