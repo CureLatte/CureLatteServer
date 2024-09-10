@@ -69,5 +69,5 @@ jobs:
         with:
           file: ./Dockerfile
           platforms: linux/amd64
-          tag: ${{secrets.DOCKERHUB_TAG}}
+          tags: ${{secrets.DOCKERHUB_TAG}}
           push: true
