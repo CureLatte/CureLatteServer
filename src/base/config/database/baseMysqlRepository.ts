@@ -1,6 +1,6 @@
 
 import { Sequelize } from 'sequelize'
-import { developmentConfig, testConfig, productionConfig} from "./config/dataBaseConfig";
+import { developmentConfig, testConfig, productionConfig} from "./dataBaseMysqlConfig";
 import { DataBaseError } from "../../../types/ErrorTypes";
 import {IsProduction, IsDevelopment} from "../../../utils/comUtils";
 

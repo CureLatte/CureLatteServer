@@ -1,5 +1,5 @@
 import {Sequelize, Model, DataTypes} from 'sequelize'
-import {sequelize} from "../baseRepository";
+import {sequelize} from "../../../base/config/database/baseMysqlRepository";
 
 class UserModel extends Model {
     static initTable(sequelize: Sequelize) {

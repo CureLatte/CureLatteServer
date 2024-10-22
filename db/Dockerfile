@@ -4,6 +4,6 @@ ENV MYSQL_ROOT_PASSWORD=12341234
 ENV MYSQL_USER=cureLatteServer
 ENV MYSQL_PASSWORD=12341234
 
-# 포트 설정 (기본 MySQL 포트는 3306)
+# 포트 설정 (기본 entity 포트는 3306)
 EXPOSE 3308
 

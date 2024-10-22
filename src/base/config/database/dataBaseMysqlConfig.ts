@@ -1,7 +1,7 @@
 import {config} from 'dotenv'
 config()
 
-import {DataBaseConfigTypes} from "../../../../types/DatabaseTypes";
+import {DataBaseConfigTypes} from "../../../types/DatabaseTypes";
 
 export const developmentConfig: DataBaseConfigTypes = {
 	username: process.env.DEVELOPMENT_DATABASE_USER,

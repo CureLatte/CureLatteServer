@@ -1,5 +1,7 @@
 import express, {json, urlencoded, Request, Response, NextFunction, ErrorRequestHandler} from "express";
 import morgan from 'morgan'
+import baseRouter from "./base/ui/baseRouter";
+
 
 export default async function  createApp(){
     const app = express()
@@ -16,6 +18,9 @@ export default async function  createApp(){
             data: 'Welcome Home!'
         })
     })
+
+
+    app.use('/', baseRouter)
 
     app.use(async (req: Request, res: Response, next: NextFunction) => {
         // router Error Handler

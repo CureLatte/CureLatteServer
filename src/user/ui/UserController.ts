@@ -1,13 +1,6 @@
 import {NextFunction, Request, Response} from "express";
 
-export const  defaultController = async (req:Request , res: Response, next: NextFunction): Promise<any> => {
-    try {
+export default interface UserController {
+    defaultController(req: Request, res: Response, next: NextFunction):Response;
 
-        return res.status(200).json({
-            ok: true
-        })
-
-    } catch (err){
-        next(err)
-    }
 }
